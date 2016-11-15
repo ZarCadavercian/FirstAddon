@@ -1,0 +1,5 @@
+## Interface: (Your Interface number)
+## Title: 71000
+## Author: Zar
+## Version: 0.1
+FirstAddon.lua

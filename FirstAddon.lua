@@ -19,16 +19,16 @@ end
 function FA.manageTooltip(tooltip, ... )
     local name, link = tooltip:GetItem()
     if not link then return end
-    tooltip:AddLine("Prearity lvl: 0")
+    tooltip:AddLine("Prearity lvl: 0", 1, 1, 1)
     tooltip:Show()
 end
 
 ItemRefTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
-    RH.manageTooltip(tooltip, ...)
+    FA.manageTooltip(tooltip, ...)
 end)
 GameTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
-    RH.manageTooltip(tooltip, ...)
+    FA.manageTooltip(tooltip, ...)
 end)
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
-    RH.manageTooltip(tooltip, ...)
+    FA.manageTooltip(tooltip, ...)
 end)
